@@ -1,7 +1,7 @@
 from setuptools import setup
 import os
 
-VERSION = "0.3"
+VERSION = "0.4"
 
 
 def get_long_description():
@@ -14,7 +14,7 @@ def get_long_description():
 
 setup(
     name="datasette-proxy-image-tags",
-    description="Proxy and render cross-origin images in datasette cells, bypassing CORS/CSP",
+    description="Proxy and render blocked cross-origin images in datasette cells",
     long_description=get_long_description(),
     long_description_content_type="text/markdown",
     author="redraw",
