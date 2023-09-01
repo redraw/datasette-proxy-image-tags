@@ -46,7 +46,7 @@ async def test_image(value, expect_img):
     assert response.status_code == 200
     html = response.text
     if expect_img:
-        expected = '<img src="/-/proxy-media?url={}" width="200" loading="lazy">'.format(
+        expected = '<img src="/-/proxy?url={}" width="200" loading="lazy">'.format(
             quote_plus(value.strip())
         )
         assert expected in html
